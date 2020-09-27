@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   get "/doctors", to: "doctor#getAll"
   get "/hospitals", to: "hospital#getAll"
   get "/schedules", to: "schedule#getAll"
+  post "/appoinments", to: "appointment#create"
+
+  post "/register", to: "patient#register"
+  post "/login", to: "patient#login"
+  get "/logout", to: "patient#logout"
 end

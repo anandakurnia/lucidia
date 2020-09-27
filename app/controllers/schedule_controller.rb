@@ -1,9 +1,9 @@
 class ScheduleController < ApplicationController
-  def getAll
-    schedules = Schedule.includes(:doctor, :hospital).all
+  before_action :require_login
 
-    render json: {
-      data: schedules.as_json(include: [:doctor, :hospital]),
-    }
+  def getAll
+    schedules = Schedule.includes(:doctor, :hospital, :patients).all
+
+    return render json: { data: schedules.as_json(include: [:doctor, :hospital, :patients]) }
   end
 end
