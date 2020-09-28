@@ -1,28 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version :
   ruby 2.6.6
 
-* System dependencies
+* System dependencies :
   redis database
   mysqli database
 
-* Configuration
+* Configuration :
   You need to config you database on :
   config/initiliazer/redis.rb
   config/database.yml
 
-* Database creation
+* Database creation :
   rails db:create
 
-* Database initialization
+* Database initialization :
   rails db:migrate
 
-* How to run the test suite
+* How to run the test suite :
   bundle exec rspec
   
