@@ -6,19 +6,23 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  ruby 2.6.6
 
 * System dependencies
+  redis database
+  mysqli database
 
 * Configuration
+  You need to config you database on :
+  config/initiliazer/redis.rb
+  config/database.yml
 
 * Database creation
+  rails db:create
 
 * Database initialization
+  rails db:migrate
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  bundle exec rspec
+  
