@@ -38,6 +38,6 @@ class PatientController < ApplicationController
   def logout
     $redis.del(request.authorization)
 
-    return render json: {}
+    return render json: { message: "logout successfully" }
   end
 end

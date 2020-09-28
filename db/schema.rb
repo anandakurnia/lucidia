@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_09_27_102824) do
 
   create_table "appointments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "schedule_id"
-    t.bigint "user_id"
+    t.bigint "patient_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
