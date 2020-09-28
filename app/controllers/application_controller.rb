@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::API
   def require_login
-    puts "penah ada rasa cinta antara kita kini tinggal kenangang"
     @credential = $redis.get(request.authorization)
 
     if (@credential == nil)
